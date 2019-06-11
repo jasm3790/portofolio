@@ -10,8 +10,7 @@ section {
 }
 
 img {
-    width: 10%;
-    height: auto;
+    width: 100%;
 }
 
 html {
@@ -34,293 +33,153 @@ h2 {
 
 
 /****************************  Menu  ****************************/
-/* unvisited link */
+
+/*navigation*/
+
 header nav a:link {
-    color: white;
+    color: pink;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
 }
 
 /* visited link */
+
 header nav a:visited {
-    color: white;
+    color: pink;
 }
 
-/* mouse over link */
+/* Hover */
 header nav a:hover {
-    color: black;
+    color: pink;
 }
 
 /* selected link */
 header nav a:active {
-    color: white;
+    color: black;
 }
-
-/*Headeren i pink når man mindsker siden*/
 
 header {
     position: fixed;
-    top: 0;
-    background-color: rgba(253, 202, 229, 0.86);
+    background: snow;
     width: 100%;
-    padding: 1rem;
-    text-align: center;
+    height: 100px;
+    top: 0vw;
+}
+
+header nav {
+    margin: 1rem 1.5rem;
+    padding-top: 0.5rem;
+    display: inline-block;
+    color: snow;
+    width: 100%;
+
+
+}
+
+header nav a {
+    font-size: 2rem;
+    color: black;
+    font-family: 'oswald', sans-serif;
+    margin: 0.25rem 0;
+    padding: 0.25rem 0;
+    text-decoration: none;
+    align-items: flex-end;
+    top: 0vw;
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    padding: 0;
+
+}
+
+#menuknap {
+    display: inline-block;
+    font-size: 2.5rem;
+    top: 1vw;
+    color: pink;
+}
+
+/*navigation slut*/
+
+/*BURGER*/
+
+
+
+.hidden {
+    /*    display: none;*/
+    /*    transform: scale(0);*/
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+
+#menu {
+    list-style-type: none;
+    transition: transform .3s;
+
 
 }
 
 
-@media only screen and (min-width:0px) {
+@media only screen and (min-width: 600px) {
 
-
-    header nav {
-        margin-top: 1.5rem;
+    #menuknap {
+        display: none;
     }
 
-    header nav a {
-        font-size: 1.5rem;
-        margin: 0 0.5rem;
-        padding: 0;
-
+    #menu.hidden {
+        transform: translateX(0);
+        opacity: 1;
     }
 
-    /***********MENU MED LISTE OG KNAPPER***********/
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        /*        overflow: hidden;*/
-    }
-
-    li {
-        float: left;
-    }
-
-
-
-    li a:hover,
-    .dropdown:hover .dropbtn {
-        color: white;
-    }
-
-    li.dropdown {
+    #menu li {
         display: inline-block;
     }
+}
 
-    .dropdown-content {
+
+@media only screen and (min-width: 760px) {
+
+    #menuknap {
         display: none;
-        position: absolute;
-        background-color: palevioletred;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        z-index: 1;
     }
 
-    .dropdown-content a {
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        text-align: left;
-        color: aqua;
+    #menu.hidden {
+        transform: translateX(0);
+        opacity: 1;
     }
 
-    .dropdown-content a:hover {
-        background-color: white;
+    #menu li a {
+        display: inline-block;
     }
+}
 
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
+/****************************  SLUT Menu  ****************************/
 
+/*******FORIDE******/
 
+/*Illustraiton*/
 
-    /****************************  SLUT Menu  ****************************/
-
-    /*******FORIDE******/
-
-    /*Illustraiton*/
-
-    #splash {
-        background-image: url(flower_girl.svg);
-        width: 100%;
-        height: 600px;
-        background-repeat: no-repeat;
-        background-size: contain;
-        margin-top: 10vw;
-        margin-left: 5vw;
-
-    }
-
-    #splash .txt1 {
-        position: fixed;
-        margin-top: 5vw;
-        margin-left: 30vw;
-        width: 100%;
-        height: 50px;
+#splash {
+    background-image: url(svg/splash.svg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    max-width: none;
 
 
-    }
-
-    #splash .txt2 {
-        position: fixed;
-        margin-top: 15vw;
-        margin-left: 35vw;
-        width: 100%;
-        height: 50px;
-
-    }
-
-    .box1 {
-        position: fixed;
-        box-sizing: content-box;
-        color: aliceblue;
-        background-size: 100%;
-        width: 100vw;
-        height: 50vw;
-        top: 5vw;
-        left: 0vw;
-        position: absolute;
-    }
-
-    /*******CV ELLER OM MIG SIDE******/
-
-    #om_mig .txt3 {
-        position: fixed;
-        margin-top: 10vw;
-        margin-left: 5vw;
-        width: 100%;
-        height: 50px;
-
-    }
 
 
-    /*
-    * {
-        box-sizing: border-box;
-    }
-*/
+}
+
+.navn p {
+    position: absolute;
+    font-family: 'oswald', sans-serif;
+    justify-content: center;
+    font-size: 5rem;
+    right: 5vw;
+    top: 45vw;
+}
 
 
-    /* The actual timeline (the vertical ruler) */
-    .timeline {
-        position: relative;
-        max-width: 1000px;
-        margin: 0 auto;
-    }
 
-    /* The actual timeline (the vertical ruler) */
-    .timeline::after {
-        content: '';
-        position: absolute;
-        width: 6px;
-        background-color: red;
-        top: 10;
-        bottom: 0;
-        left: 50%;
-        margin-left: -3px;
-    }
-
-    /* Container around content */
-    .container {
-        padding: 10px 40px;
-        position: relative;
-        background-color: inherit;
-        width: 50%;
-    }
-
-    /* The circles on the timeline */
-    .container::after {
-        content: '';
-        position: absolute;
-        width: 25px;
-        height: 25px;
-        right: -17px;
-        background-color: white;
-        border: 4px solid #FF9F55;
-        top: 15px;
-        border-radius: 50%;
-        z-index: 1;
-    }
-
-    /* Place the container to the left */
-    .left {
-        left: 0;
-    }
-
-    /* Place the container to the right */
-    .right {
-        left: 50%;
-    }
-
-    /* Add arrows to the left container (pointing right) */
-    .left::before {
-        content: " ";
-        height: 0;
-        position: absolute;
-        top: 22px;
-        width: 0;
-        z-index: 1;
-        right: 30px;
-        border: medium solid white;
-        border-width: 10px 0 10px 10px;
-        border-color: transparent transparent transparent white;
-    }
-
-    /* Add arrows to the right container (pointing left) */
-    .right::before {
-        content: " ";
-        height: 0;
-        position: absolute;
-        top: 22px;
-        width: 0;
-        z-index: 1;
-        left: 30px;
-        border: medium solid white;
-        border-width: 10px 10px 10px 0;
-        border-color: transparent white transparent transparent;
-    }
-
-    /* Fix the circle for containers on the right side */
-    .right::after {
-        left: -16px;
-    }
-
-    /* The actual content */
-    .content {
-        padding: 20px 30px;
-        background-color: white;
-        position: relative;
-        border-radius: 6px;
-    }
-
-    /* Media queries - Responsive timeline on screens less than 600px wide */
-    @media screen and (max-width: 600px) {
-
-        /* Place the timelime to the left */
-        .timeline::after {
-            left: 31px;
-        }
-
-        /* Full-width containers */
-        .container {
-            width: 100%;
-            padding-left: 70px;
-            padding-right: 25px;
-        }
-
-        /* Make sure that all arrows are pointing leftwards */
-        .container::before {
-            left: 60px;
-            border: medium solid white;
-            border-width: 10px 10px 10px 0;
-            border-color: transparent white transparent transparent;
-        }
-
-        /* Make sure all circles are at the same spot */
-        .left::after,
-        .right::after {
-            left: 15px;
-        }
-
-        /* Make all right containers behave like the left ones */
-        .right {
-            left: 0%;
-        }
-    }
+/*******CV ELLER OM MIG SIDE******/
