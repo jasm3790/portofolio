@@ -19,10 +19,10 @@ html {
 
 h1 {
     font-family: 'Oswald', sans-serif;
-    font-size: 10.5vw;
+    font-size: 3vw;
     color: pink;
-    top: 20vw;
-    left: 10vw;
+    top: 1vw;
+    left: 5vw;
     position: absolute;
     text-transform: uppercase;
 }
@@ -249,4 +249,26 @@ header nav a {
     display: flex;
     flex-wrap: nowrap;
 
+}
+
+#cv .box1 {
+    box-sizing: content-box;
+    position: absolute;
+    background-color: white;
+    top: 8vw;
+    left: 3vw;
+    padding: 32px;
+    text-align: center;
+    width: 23%;
+    height: 35vw;
+}
+
+#cv .img {
+    background-image: url(billeder/profilbillede.jpeg);
+    background-size: cover;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 2vw;
+    left: 3vw;
 }
