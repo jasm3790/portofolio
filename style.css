@@ -19,15 +19,21 @@ html {
 
 h1 {
     font-family: 'Oswald', sans-serif;
-    font-size: 5rem;
+    font-size: 10.5vw;
     color: pink;
+    top: 20vw;
+    left: 10vw;
+    position: absolute;
     text-transform: uppercase;
 }
 
 h2 {
     font-family: 'Oswald', sans-serif;
-    font-size: 2rem;
+    font-size: 4.6vw;
     color: palevioletred;
+    position: absolute;
+    top: 40vw;
+    left: 10vw;
 }
 
 
@@ -160,12 +166,14 @@ header nav a {
 
 /****DROPDOWN KNAP***/
 
-/* Style The Dropdown Button */
+/* DROP DOWN BOTTON KNAPPEN styling */
 .dropbtn {
-    background-color: #4CAF50;
-    color: white;
+    color: pink;
+    background-color: snow;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 1.6rem;
     padding: 16px;
-    font-size: 16px;
     border: none;
     cursor: pointer;
 }
@@ -186,30 +194,28 @@ header nav a {
     z-index: 1;
 }
 
-/* Links inside the dropdown */
+/* LINK I DROPDOWN */
 .dropdown-content a {
-    color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
-/* Change color of dropdown links on hover */
+/* FARVEN PÅ LINKS NÅR MAN HOVER PÅ DEM I DROPDOWN MENUEN */
 .dropdown-content a:hover {
     background-color: #f1f1f1
 }
 
-/* Show the dropdown menu on hover */
+/* DET HER GØR AT LISTEN KOMMER UD AF KNAPPEN*/
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+    background-color: snow;
 }
 
-<
 /****************************  SLUT Menu  ****************************/
 
 /*******FORIDE******/
@@ -223,21 +229,24 @@ header nav a {
     height: 100vh;
     max-width: none;
     background-position: 27%;
-
-
-
-
 }
 
-.navn p {
-    position: absolute;
-    font-family: 'oswald', sans-serif;
-    justify-content: center;
-    font-size: 5rem;
-    right: 5vw;
-    top: 45vw;
-}
+
 
 
 
 /*******CV ELLER OM MIG SIDE******/
+
+
+#cv .sectionwrapper {
+    width: 100vw;
+    height: 200vw;
+    background: rgba(246, 201, 255, 0.38);
+    top: 6vw;
+    right: 0vw;
+    bottom: 0vw;
+    position: fixed;
+    display: flex;
+    flex-wrap: nowrap;
+
+}
