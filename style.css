@@ -21,19 +21,29 @@ h1 {
     font-family: 'Oswald', sans-serif;
     font-size: 3vw;
     color: pink;
-    top: 1vw;
-    left: 5vw;
+    top: 0vw;
+    left: 3vw;
     position: absolute;
     text-transform: uppercase;
 }
 
 h2 {
     font-family: 'Oswald', sans-serif;
-    font-size: 4.6vw;
+    font-size: 2vw;
     color: palevioletred;
     position: absolute;
-    top: 40vw;
-    left: 10vw;
+    left: 2vw;
+    top: -0.5vw;
+}
+
+h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2vw;
+    color: pink;
+    position: absolute;
+    left: 2.5vw;
+    top: -1.5vw;
+
 }
 
 
@@ -223,7 +233,7 @@ header nav a {
 /*Illustraiton*/
 
 #splash {
-    background-image: url(svg/splash.svg);
+    background-image: url(b/splash.svg);
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -251,24 +261,78 @@ header nav a {
 
 }
 
-#cv .box1 {
+
+#cv .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: snow;
+}
+
+/*HVID BOKS*/
+
+#cv .col1 {
     box-sizing: content-box;
     position: absolute;
     background-color: white;
-    top: 8vw;
-    left: 3vw;
+    top: 7vw;
+    left: 2vw;
     padding: 32px;
     text-align: center;
     width: 23%;
     height: 35vw;
 }
 
+/***PROFILBILLEDE***/
+
 #cv .img {
     background-image: url(billeder/profilbillede.jpeg);
     background-size: cover;
     position: absolute;
-    width: 80%;
-    height: 80%;
+    width: 65%;
+    height: 55%;
     top: 2vw;
     left: 3vw;
+}
+
+
+#cv .col2 {
+    box-sizing: content-box;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    top: 11vw;
+    left: 32vw;
+    padding: 32px;
+    width: 60%;
+    height: 45vw;
+}
+
+#cv .box1 {
+    box-sizing: content-box;
+    position: absolute;
+    background-color: rgba(201, 208, 255, 0.53);
+    left: 2vw;
+    top: 5vw;
+    padding: 32px;
+    width: 88%;
+    height: 35vw;
+}
+
+#cv .txt {
+    font-weight: bold;
+    margin-top: 400px;
+    margin-left: 5px;
+    font-size: 1.3rem;
+    text-align: left;
+    color: #ffc0cb;
+}
+
+#cv .ikon1 {
+    background-image: url(billeder/name.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 6%;
+    height: 4%;
+    top: 25vw;
+    left: 4vw;
+
 }
