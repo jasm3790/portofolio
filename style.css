@@ -46,6 +46,21 @@ h3 {
 
 }
 
+footer {
+    background-color: snow;
+    max-width: 100%;
+    text-align: center;
+    height: 100px;
+}
+
+footer p {
+    color: pink;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+
+
+}
 
 
 /****************************  Menu  ****************************/
@@ -233,7 +248,7 @@ header nav a {
 /*Illustraiton*/
 
 #splash {
-    background-image: url(b/splash.svg);
+    background-image: url(billeder/splash.svg);
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -243,96 +258,159 @@ header nav a {
 
 
 
+/******PORTFOLIO*******/
 
+
+.pink_box {
+    width: 100%;
+    height: 150px;
+    background: pink;
+    top: 99px;
+    left: 0vw;
+    position: absolute;
+
+}
+
+.pink_box h3 {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 45px;
+    padding: 5px;
+}
+
+/***BILLEDE MED TEKST***/
+
+
+#portfolio .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 300px;
+}
+
+
+.box {
+    flex-basis: 450px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(246, 201, 255, 0.6);
+    padding: 10px;
+    margin: 0.5rem;
+    position: relative;
+}
+
+.lastbox {
+    opacity: 0;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(245, 201, 255, 0.61);
+}
+
+
+.box:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    font-family: sans-serif;
+    position: absolute;
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
 
 /*******CV ELLER OM MIG SIDE******/
 
 
-#cv .sectionwrapper {
-    width: 100vw;
-    height: 200vw;
-    background: rgba(246, 201, 255, 0.38);
-    top: 6vw;
-    right: 0vw;
-    bottom: 0vw;
-    position: fixed;
-    display: flex;
-    flex-wrap: nowrap;
+.top_box {
+    width: 100%;
+    height: 150px;
+    background: pink;
+    top: 99px;
+    left: 0vw;
+    position: absolute;
 
 }
 
+.top_box h3 {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 45px;
+    padding: 5px;
+}
 
 #cv .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
-    background-color: snow;
+    margin-top: 300px;
+    background-color: red;
 }
-
-/*HVID BOKS*/
 
 #cv .col1 {
-    box-sizing: content-box;
-    position: absolute;
-    background-color: white;
-    top: 7vw;
-    left: 2vw;
-    padding: 32px;
-    text-align: center;
-    width: 23%;
-    height: 35vw;
+    flex-basis: 300px;
+    flex-grow: 2;
+    background-color: #FDCAE5;
+    width: 100px;
+    top: 0vw;
+    left: 1vw;
+    padding: 10px;
+
 }
 
-/***PROFILBILLEDE***/
-
-#cv .img {
-    background-image: url(billeder/profilbillede.jpeg);
-    background-size: cover;
-    position: absolute;
-    width: 65%;
-    height: 55%;
-    top: 2vw;
-    left: 3vw;
+#cv .top {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
 }
 
+#cv .bottom {
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+#cv .txt,
+#cv .image {
+    flex-basis: 250px;
+    flex-grow: 1;
+    padding: 10px;
+}
 
 #cv .col2 {
-    box-sizing: content-box;
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.9);
-    top: 11vw;
-    left: 32vw;
-    padding: 32px;
-    width: 60%;
-    height: 45vw;
-}
-
-#cv .box1 {
-    box-sizing: content-box;
-    position: absolute;
-    background-color: rgba(201, 208, 255, 0.53);
-    left: 2vw;
-    top: 5vw;
-    padding: 32px;
-    width: 88%;
-    height: 35vw;
-}
-
-#cv .txt {
-    font-weight: bold;
-    margin-top: 400px;
-    margin-left: 5px;
-    font-size: 1.3rem;
-    text-align: left;
-    color: #ffc0cb;
-}
-
-#cv .ikon1 {
-    background-image: url(billeder/name.svg);
-    background-size: 100%;
-    position: absolute;
-    width: 6%;
-    height: 4%;
-    top: 25vw;
-    left: 4vw;
+    flex-basis: 300px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: #FDCAE5;
 
 }
