@@ -6,6 +6,7 @@ body {
 section {
     max-width: 1200px;
     margin: 0 auto;
+    display: flex;
 
 }
 
@@ -17,34 +18,7 @@ html {
     background-color: white;
 }
 
-h1 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 3vw;
-    color: pink;
-    top: 0vw;
-    left: 3vw;
-    position: absolute;
-    text-transform: uppercase;
-}
 
-h2 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 2vw;
-    color: palevioletred;
-    position: absolute;
-    left: 2vw;
-    top: -0.5vw;
-}
-
-h3 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.2vw;
-    color: pink;
-    position: absolute;
-    left: 2.5vw;
-    top: -1.5vw;
-
-}
 
 footer {
     background-color: snow;
@@ -90,7 +64,6 @@ header nav a:active {
 }
 
 header {
-    position: fixed;
     background: snow;
     width: 100%;
     height: 100px;
@@ -262,12 +235,11 @@ header nav a {
 
 
 .pink_box {
-    width: 100%;
-    height: 150px;
+    flex-basis: 1000px;
+    flex-grow: 1;
     background: pink;
-    top: 99px;
-    left: 0vw;
-    position: absolute;
+
+
 
 }
 
@@ -347,70 +319,52 @@ header nav a {
 
 /*******CV ELLER OM MIG SIDE******/
 
-
-.top_box {
-    width: 100%;
-    height: 150px;
-    background: pink;
-    top: 99px;
-    left: 0vw;
-    position: absolute;
-
+#cv img {
+    /*    width: 70%;*/
 }
 
-.top_box h3 {
-    font-family: 'Oswald', sans-serif;
-    color: white;
-    font-size: 2rem;
-    text-align: center;
-    margin-top: 45px;
-    padding: 5px;
-}
-
-#cv .sectionwrapper {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 300px;
-    background-color: red;
-}
-
-#cv .col1 {
-    flex-basis: 300px;
-    flex-grow: 2;
-    background-color: #FDCAE5;
-    width: 100px;
-    top: 0vw;
-    left: 1vw;
-    padding: 10px;
-
-}
-
-#cv .top {
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-}
-
-#cv .bottom {
-    display: flex;
-    flex-wrap: wrap;
 
 
-}
-
-#cv .txt,
-#cv .image {
-    flex-basis: 250px;
+#cv .box1 {
+    flex-basis: 100px;
     flex-grow: 1;
-    padding: 10px;
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(255, 192, 203, 0.4), 0 6px 20px 0 rgba(255, 192, 203, 0.58);
+
+
 }
 
-#cv .col2 {
+#cv .box2 {
+    background-color: rgba(255, 192, 203, 0.26);
     flex-basis: 300px;
-    flex-grow: 1;
+    flex-grow: 3;
+    margin: 10px;
+
+
+}
+
+.linje1 {
     display: flex;
-    flex-direction: column;
-    padding: 30px;
-    background-color: #FDCAE5;
+    margin: 10px;
+}
+
+.linje1 img {
+    width: 2vw;
+    height: 2vw;
+    margin: 2px;
+    flex-grow: 0;
+    margin-left: 0.5em;
+
+}
+
+.linje1 p {
+    font-weight: bold;
+    font-size: 1rem;
+    color: pink;
+    margin: 0 0 0 0.6em;
+
+    flex-grow: 1;
 
 }
