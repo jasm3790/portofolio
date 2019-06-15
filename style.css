@@ -37,7 +37,7 @@ footer {
 }
 
 footer p {
-    color: pink;
+    color: #fffafa;
     font-size: 1.2rem;
     text-align: center;
     font-weight: bold;
@@ -46,7 +46,14 @@ footer p {
 
 }
 
-/*FORSKELLIGE SKRIFTER*/
+/*BOKSE - fælles indstillinger*/
+
+.pink_box {
+    padding: 1em;
+    background: pink;
+}
+
+/*FORSKELLIGE SKRIFTER - fælles indstillinger*/
 
 h1 {
     font-family: 'Oswald', sans-serif;
@@ -67,12 +74,22 @@ h2 {
     padding: 5px;
 }
 
+h2 {
+    font-family: 'Oswald', sans-serif;
+    color: pink;
+    font-size: 2rem;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 5px;
+}
+
 /****************************  Menu  ****************************/
 
 /*navigation*/
 
 header nav a:link {
-    color: pink;
+    color: #c9d0ff;
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
 }
@@ -80,21 +97,21 @@ header nav a:link {
 /* visited link */
 
 header nav a:visited {
-    color: #ffc0cb;
+    color: black;
 }
 
 /* Hover */
 header nav a:hover {
-    color: pink;
+    color: white;
 }
 
 /* selected link */
 header nav a:active {
-    color: black;
+    color: white;
 }
 
 header {
-    background: snow;
+    background: rgba(246, 201, 255, 0.73);
     width: 100%;
     height: 100px;
     top: 0vw;
@@ -104,7 +121,7 @@ header nav {
     margin: 1rem 1.5rem;
     padding-top: 0.5rem;
     display: inline-block;
-    color: snow;
+    color: #f6c9ff;
     width: 100%;
 
 
@@ -129,7 +146,7 @@ header nav a {
     display: inline-block;
     font-size: 2.5rem;
     top: 1vw;
-    color: pink;
+    color: black;
 }
 
 /*navigation slut*/
@@ -266,8 +283,7 @@ header nav a {
 
 
 
-
-/***BILLEDE MED TEKST***/
+/***Billede med tekst***/
 
 
 #portfolio .sectionwrapper {
@@ -277,7 +293,7 @@ header nav a {
 
 #portfolio .pink_box {
     padding: 1em;
-    background: pink;
+    background: #c9d0ff;
 }
 
 .box2 {
@@ -317,7 +333,7 @@ header nav a {
 }
 
 
-.box:hover .overlay {
+.box2:hover .overlay {
     opacity: 1;
 }
 
@@ -342,10 +358,7 @@ header nav a {
     flex-wrap: wrap;
 }
 
-#cv .pink_box {
-    padding: 1em;
-    background: pink;
-}
+
 
 #cv .box1 {
     flex-basis: 100px;
@@ -383,7 +396,7 @@ header nav a {
 
 }
 
-#cv .box2 {
+.box2 {
     background-color: rgba(255, 192, 203, 0.26);
     flex-basis: 300px;
     flex-grow: 3;
@@ -392,14 +405,9 @@ header nav a {
 
 }
 
-/*
-#cv .box2 p {
-    font-weight: bold;
-    font-size: 2rem;
-    color: pink;
-    margin-top: 2vw;
-    margin-left: 1vw;
+.col {
+    flex-basis: 300px;
     flex-grow: 1;
-
+    background-color: snow;
+    padding: 15px;
 }
-*/
