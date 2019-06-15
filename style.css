@@ -49,15 +49,17 @@ footer p {
 /*BOKSE - fælles indstillinger*/
 
 .pink_box {
-    padding: 1em;
-    background: pink;
+    margin: 2em;
+    margin-left: 0vw;
+    margin-right: 0vw;
+    background: rgba(201, 208, 255, 0.59);
 }
 
 /*FORSKELLIGE SKRIFTER - fælles indstillinger*/
 
 h1 {
     font-family: 'Oswald', sans-serif;
-    color: white;
+    color: black;
     font-size: 2rem;
     text-align: center;
     margin-top: 45px;
@@ -66,7 +68,7 @@ h1 {
 
 h2 {
     font-family: 'Oswald', sans-serif;
-    color: pink;
+    color: rgba(221, 116, 242, 0.55);
     font-size: 2rem;
     text-align: left;
     margin-top: 20px;
@@ -74,14 +76,58 @@ h2 {
     padding: 5px;
 }
 
-h2 {
+h3 {
     font-family: 'Oswald', sans-serif;
-    color: pink;
+    color: #f6c9ff;
     font-size: 2rem;
     text-align: left;
     margin-top: 20px;
     margin-left: 10px;
     padding: 5px;
+}
+
+h4 {
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    font-size: 1rem;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+h5 {
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    font-size: 2rem;
+    text-align: left;
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    color: #1d1d1d;
+    text-align: left;
+
+
+}
+
+figcaption {
+  display: block;
+    margin-left: 0.5em;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    margin: 10px;
 }
 
 /****************************  Menu  ****************************/
@@ -89,7 +135,7 @@ h2 {
 /*navigation*/
 
 header nav a:link {
-    color: #c9d0ff;
+    color: black;
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
 }
@@ -102,7 +148,7 @@ header nav a:visited {
 
 /* Hover */
 header nav a:hover {
-    color: white;
+    color: rgba(221, 116, 242, 0.55);
 }
 
 /* selected link */
@@ -111,7 +157,7 @@ header nav a:active {
 }
 
 header {
-    background: rgba(246, 201, 255, 0.73);
+    background: rgba(246, 201, 255, 0.56);
     width: 100%;
     height: 100px;
     top: 0vw;
@@ -209,58 +255,6 @@ header nav a {
     }
 }
 
-/****DROPDOWN KNAP***/
-
-/* DROP DOWN BOTTON KNAPPEN styling */
-.dropbtn {
-    color: pink;
-    background-color: snow;
-    font-family: 'Oswald', sans-serif;
-    font-weight: bold;
-    font-size: 1.6rem;
-    padding: 16px;
-    border: none;
-    cursor: pointer;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-/* LINK I DROPDOWN */
-.dropdown-content a {
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-/* FARVEN PÅ LINKS NÅR MAN HOVER PÅ DEM I DROPDOWN MENUEN */
-.dropdown-content a:hover {
-    background-color: #f1f1f1
-}
-
-/* DET HER GØR AT LISTEN KOMMER UD AF KNAPPEN*/
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-    background-color: snow;
-}
-
 /****************************  SLUT Menu  ****************************/
 
 /*******FORIDE******/
@@ -280,30 +274,21 @@ header nav a {
 
 /******PORTFOLIO*******/
 
-
-
-
-/***Billede med tekst***/
-
-
 #portfolio .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
 }
 
-#portfolio .pink_box {
-    padding: 1em;
-    background: #c9d0ff;
-}
+/***Bokse med hover***/
 
-.box2 {
+#portfolio .box2 {
     flex-basis: 450px;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: rgba(246, 201, 255, 0.6);
-    padding: 10px;
+    background-color: #f6c9ff;
+    padding: 12px;
     margin: 0.5rem;
     position: relative;
 }
@@ -351,31 +336,66 @@ header nav a {
     text-align: center;
 }
 
-/*******CV ELLER OM MIG SIDE******/
+
+
+.col_wide a {
+    color: black;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-left: 20px;
+
+
+}
+
+#stilartsite .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.col_wide {
+    flex-basis: 300px;
+    flex-grow: 0.5;
+    background-color: #FDCAE5;
+    padding: 25px;
+
+}
+
+
+
+
+
+/***************CV ELLER OM MIG SIDE*****************/
 
 #cv .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
+
 }
 
-
+/*BOKS MED BILLEDE OG INFO */
 
 #cv .box1 {
-    flex-basis: 100px;
-    flex-grow: 1;
+    flex-basis: 200px;
+    flex-grow: 0.5;
     background-color: white;
     padding: 20px;
     margin: 10px;
-    box-shadow: 0 4px 8px 0 rgba(255, 192, 203, 0.4), 0 6px 20px 0 rgba(255, 192, 203, 0.58);
+    margin-left: 100px;
 
+    box-shadow: 0 4px 8px 0 rgba(246, 201, 255, 0.98), 0 6px 20px 0 rgba(246, 201, 255, 0.97);
 
 }
 
+/*CLASS HVOR TEKST OG IKONER BEFINDER SIG*/
 
 .linje1 {
     display: flex;
     margin: 10px;
+
 }
+
+/*IKONER*/
 
 .linje1 img {
     width: 2vw;
@@ -384,20 +404,24 @@ header nav a {
     flex-grow: 0;
     margin-left: 0.5em;
 
+
 }
+
+/*SKRIFTEN*/
 
 .linje1 p {
     font-weight: bold;
     font-size: 1rem;
-    color: pink;
+    color: #f6c9ff;
     margin: 0 0 0 0.6em;
-
     flex-grow: 1;
 
 }
 
+/*BOKS MED UDDANNELSE OG ERFARING*/
+
 .box2 {
-    background-color: rgba(255, 192, 203, 0.26);
+    background-color: rgba(246, 201, 255, 0.52);
     flex-basis: 300px;
     flex-grow: 3;
     margin: 10px;
@@ -405,9 +429,10 @@ header nav a {
 
 }
 
+/*SPALTER*/
+
 .col {
     flex-basis: 300px;
     flex-grow: 1;
-    background-color: snow;
     padding: 15px;
 }
