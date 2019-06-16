@@ -366,6 +366,12 @@ header nav a {
     margin: 10px;
 }
 
+#redesign .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
 .col_wide {
     flex-basis: 300px;
     flex-grow: 0.5;
