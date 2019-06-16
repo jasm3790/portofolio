@@ -30,17 +30,20 @@ html {
 
 
 footer {
-    background-color: snow;
+    background-color: rgba(246, 201, 255, 0.56);
     max-width: 100%;
     text-align: center;
     height: 100px;
 }
 
 footer p {
-    color: #fffafa;
     font-size: 1.2rem;
     text-align: center;
     font-weight: bold;
+    margin: 0 1 0 0em;
+    padding: 10px;
+    color: dimgrey;
+
 
 
 
@@ -115,7 +118,7 @@ p {
 }
 
 figcaption {
-  display: block;
+    display: block;
     margin-left: 0.5em;
     font-weight: 500;
     font-style: italic;
@@ -341,13 +344,17 @@ header nav a {
 .col_wide a {
     color: black;
     font-weight: bold;
-    font-size: 1.1rem;
-    margin-left: 20px;
-
+    font-size: 1.2rem;
 
 }
 
 #stilartsite .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+#spil .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
     margin: 10px;
