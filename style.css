@@ -19,9 +19,6 @@ section #portfolio {
     display: flex;
 }
 
-img {
-    width: 100%;
-}
 
 html {
     background-color: white;
@@ -130,7 +127,7 @@ img {
     width: 100%;
     flex-grow: 1;
     display: flex;
-    margin: 10px;
+    /*    margin: 10px;*/
 }
 
 /****************************  Menu  ****************************/
@@ -291,20 +288,18 @@ header nav a {
     flex-direction: column;
     justify-content: space-between;
     background-color: #f6c9ff;
-    padding: 12px;
-    margin: 0.5rem;
     position: relative;
+    padding: 10px;
 }
 
-.lastbox {
-    opacity: 0;
-}
-
-.image {
-    display: block;
+#portfolio .img {
     width: 100%;
-    height: auto;
+    flex-grow: 0.5;
+    display: flex;
 }
+
+
+
 
 .overlay {
     position: absolute;
@@ -338,7 +333,6 @@ header nav a {
     transform: translate(-50%, -50%);
     text-align: center;
 }
-
 
 
 .col_wide a {
@@ -392,9 +386,16 @@ header nav a {
 
 }
 
+@media only screen and (min-width: 700px) {
 
+    .col_wide {
+        margin: 2;
+        max-width: 800px;
+        align-content: center;
 
+    }
 
+}
 
 /***************CV ELLER OM MIG SIDE*****************/
 
