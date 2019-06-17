@@ -380,6 +380,7 @@ header nav a {
     margin: 10px;
 }
 
+
 .col_wide {
     flex-basis: 300px;
     flex-grow: 0.5;
@@ -387,6 +388,7 @@ header nav a {
     padding: 25px;
 
 }
+
 
 #gruppespil img {
     width: 100%;
