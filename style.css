@@ -122,7 +122,7 @@ p {
 li {
     list-style-type: none;
     font-size: 1.1em;
-    line-height: 2;
+    line-height: 1;
 }
 
 figcaption {
@@ -485,12 +485,17 @@ header nav a {
 
 }
 
+/*TEKST I MIN LISTE*/
 #box p {
-    font-size: 1em;
+    font-size: 1.1em;
+    font-family: 'Oswald', sans-serif;
     font-weight: bold;
     color: black;
+    margin-left: 1em;
 
 }
+
+/*MIN BOKSE  SOM SKAL FOLDE UD*/
 
 #box.lille {
     overflow: hidden;
@@ -545,19 +550,9 @@ span:after {
     width: 100%;
 
     /*    selve gradienten*/
-    background: linear-gradient(#fae3ff, #ef9eff);
+    background: linear-gradient(rgba(250, 227, 255, 0.24), rgba(239, 158, 255, 0.79));
 
     /*    for at placere plusset i midten*/
     text-align: center;
 
 }
-
-/*SPALTER*/
-
-/*
-.col {
-    flex-basis: 300px;
-    flex-grow: 1;
-    padding: 15px;
-}
-*/
