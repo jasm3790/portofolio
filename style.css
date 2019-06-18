@@ -66,7 +66,7 @@ h1 {
 
 h2 {
     font-family: 'Lato', sans-serif;
-    color: dimgrey;
+    color: black;
     font-size: 1.8rem;
     text-align: left;
     margin-top: 10px;
@@ -108,6 +108,7 @@ h6 {
     font-weight: bold;
     font-size: 1rem;
     text-align: left;
+    margin-left: 0.5em;
 }
 
 p {
@@ -314,7 +315,7 @@ header nav a {
     background-color: #f6c9ff;
     position: relative;
     padding: 10px;
-    margin: 10px;
+    margin: 20px;
 }
 
 #portfolio .img {
@@ -343,6 +344,7 @@ header nav a {
 
 .box2:hover .overlay {
     opacity: 1;
+    transition: transform .2s;
 }
 
 .text {
@@ -357,6 +359,16 @@ header nav a {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+}
+
+/*DEN ZOMMER IND NÅR MAN HOVER PÅ BOKSENE*/
+
+.box2:hover {
+    -ms-transform: scale(0.8);
+    /* IE 9 */
+    -webkit-transform: scale(1.5);
+    /* Safari 3-8 */
+    transform: scale(1.1);
 }
 
 
@@ -420,7 +432,7 @@ header nav a {
 #cv .box1 {
     flex-basis: 200px;
     flex-grow: 1;
-    background-color: white;
+    background-color: #;
     padding: 20px;
     margin: 10px;
     margin-left: 10px;
@@ -440,14 +452,10 @@ header nav a {
 /*IKONER*/
 
 .linje1 img {
-    width: 2vw;
-    height: 2vw;
+    width: 20px;
+    height: 20px;
     margin: 2px;
     flex-grow: 0;
-    margin-left: 0.5em;
-    margin-top: 0.7em;
-
-
 }
 
 /*SKRIFTEN*/
@@ -456,9 +464,9 @@ header nav a {
     font-size: 1rem;
     font-weight: bold;
     color: black;
-    margin-top: 0.7em;
+    margin-top: 0.2em;
     margin-left: 0.5em;
-    flex-grow: 1;
+    flex-grow: 0;
 
 }
 
@@ -469,6 +477,7 @@ header nav a {
     font-size: 1rem;
     flex-grow: 1;
     margin-right: 0.8em;
+    margin-left: 0.5em;
     text-align: left;
 }
 
