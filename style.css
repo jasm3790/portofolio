@@ -1,3 +1,5 @@
+/*GENRELLE INDSTILLINGER*/
+
 body {
     margin: 0;
 }
@@ -24,7 +26,7 @@ html {
     background-color: white;
 }
 
-
+/*INDSTILLINGER FOR FOOTER*/
 
 footer {
     background-color: rgba(246, 201, 255, 0.56);
@@ -39,15 +41,11 @@ footer p {
     font-weight: bold;
     padding: 10px;
     color: dimgrey;
-
-
-
-
 }
 
 /*BOKSE - fælles indstillinger*/
 
-.pink_box {
+.overskrift_box {
     margin: 2em;
     margin-left: 0vw;
     margin-right: 0vw;
@@ -217,35 +215,15 @@ header nav a {
 
 #menu {
     list-style-type: none;
-    background-color: orangered;
+    background-color: rgba(246, 201, 255, 0.9);
 }
 
-/*
-#menu  {
-    list-style-type: none;
-    line-height: 2.5;
-    transition: transform .3s;
-    transform-origin: top left;
-    font-family: sans-serif;
-    background-color: rgba(246, 201, 255, 0.81);
-    position: absolute;
-    height: 200px;
-    width: 200px;
-    padding: 5px
-}
-*/
+
 
 #menu a {
     display: block;
     line-height: 2;
-    /*
-    background-color: rgba(246, 201, 255, 0.84);
-    padding: 10px;
-    width: 50vw;
-*/
-    /*THIS MAKES THE MENU VERTICAL*/
 }
-
 
 @media only screen and (min-width: 600px) {
 
@@ -265,7 +243,7 @@ header nav a {
 }
 
 
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 600px) {
 
     #menuknap {
         display: none;
@@ -289,7 +267,7 @@ header nav a {
 
 /*******FORIDE******/
 
-/*Illustraiton*/
+/*SPLASH BILLEDE*/
 
 #splash {
     background-image: url(billeder/forside_splash.png);
@@ -302,7 +280,6 @@ header nav a {
 }
 
 
-
 /******PORTFOLIO*******/
 
 #portfolio .sectionwrapper {
@@ -310,13 +287,12 @@ header nav a {
     flex-wrap: wrap;
 }
 
-
 .lastbox {
     opacity: 0;
 }
 
 
-/***Bokse med hover***/
+/***PORTFOLIO BOKSE***/
 
 #portfolio .box2 {
     flex-basis: 450px;
@@ -336,7 +312,7 @@ header nav a {
     display: flex;
 }
 
-
+/***PORTFOLIO HOVER BOKSE***/
 
 
 .overlay {
@@ -373,7 +349,7 @@ header nav a {
 }
 
 
-/*FÆLLES INDSTILLINGER FOR UNDERSIDER*/
+/*FÆLLES INDSTILLINGER FOR UNDERSIDER I PORTFOLIO*/
 
 #indhold .sectionwrapper {
     display: flex;
@@ -428,7 +404,7 @@ header nav a {
 
 }
 
-/*BOKS MED BILLEDE OG INFO */
+/*HVID BOKS MED BILLEDE OG INFO */
 
 #cv .box1 {
     flex-basis: 200px;
@@ -565,14 +541,12 @@ span:after {
 
 }
 
-
-
-
-
 /*SPALTER*/
 
+/*
 .col {
     flex-basis: 300px;
     flex-grow: 1;
     padding: 15px;
 }
+*/
