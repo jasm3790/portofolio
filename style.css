@@ -57,6 +57,7 @@ footer p {
 
 /*FORSKELLIGE SKRIFTER - fælles indstillinger*/
 
+
 h1 {
     font-family: 'Oswald', sans-serif;
     color: black;
@@ -210,8 +211,16 @@ header nav a {
 
 #menu {
     list-style-type: none;
+    line-height: 2;
     transition: transform .3s;
+    transform-origin: top left;
     font-family: sans-serif;
+    background-color: rgba(246, 201, 255, 0.81);
+    position: absolute;
+    height: 150px;
+    z-index: 10;
+    padding: 5px;
+
 
 
 }
@@ -337,6 +346,30 @@ header nav a {
 }
 
 
+/*FÆLLES INDSTILLINGER FOR UNDERSIDER*/
+
+#indhold .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+#indhold img {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    margin: 15px;
+}
+
+
+.col_wide {
+    flex-basis: 300px;
+    flex-grow: 0.5;
+    background-color: rgba(253, 202, 229, 0.69);
+    padding: 25px;
+
+}
+
 .col_wide a {
     color: black;
     font-weight: bold;
@@ -344,86 +377,10 @@ header nav a {
 
 }
 
-#stilartsite .sectionwrapper {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 10px;
+#indhold a {
+    line-height: 5;
 }
 
-#spil .sectionwrapper {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 10px;
-}
-
-#gruppespil .sectionwrapper {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 10px;
-}
-
-#redesign .sectionwrapper {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 10px;
-}
-
-#nativeapp .sectionwrapper {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 10px;
-}
-
-#moonbar .sectionwrapper {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 10px;
-}
-
-
-.col_wide {
-    flex-basis: 300px;
-    flex-grow: 0.5;
-    background-color: #FDCAE5;
-    padding: 25px;
-
-}
-
-
-#gruppespil img {
-    width: 100%;
-    flex-grow: 1;
-    display: flex;
-    margin: 10px;
-}
-
-#stilartsite img {
-    width: 100%;
-    flex-grow: 1;
-    display: flex;
-    margin: 10px;
-}
-
-#spil img {
-    width: 100%;
-    flex-grow: 1;
-    display: flex;
-    margin: 10px;
-}
-
-#moonbar img {
-    width: 100%;
-    flex-grow: 1;
-    display: flex;
-    margin: 10px;
-}
-
-#redesign img {
-    width: 100%;
-    flex-grow: 1;
-    display: flex;
-    margin: 10px;
-}
 
 @media only screen and (min-width: 700px) {
 
