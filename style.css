@@ -56,7 +56,7 @@ footer p {
 
 
 h1 {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Lato', sans-serif;
     color: black;
     font-size: 2rem;
     text-align: center;
@@ -65,7 +65,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Lato', sans-serif;
     color: dimgrey;
     font-size: 1.8rem;
     text-align: left;
@@ -112,7 +112,7 @@ h6 {
 }
 
 p {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.1rem;
     color: #1d1d1d;
     text-align: left;
@@ -215,7 +215,13 @@ header nav a {
 
 #menu {
     list-style-type: none;
-    background-color: rgba(246, 201, 255, 0.9);
+    background-color: rgb(246, 201, 255);
+    position: fixed;
+    width: 30vw;
+    text-align: center;
+    transition: transform 0.3s;
+    transform-origin: top left;
+
 }
 
 
@@ -225,7 +231,7 @@ header nav a {
     line-height: 2;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 700px) {
 
     #menuknap {
         display: none;
@@ -243,7 +249,7 @@ header nav a {
 }
 
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 700px) {
 
     #menuknap {
         display: none;
@@ -376,7 +382,7 @@ header nav a {
 .col_wide a {
     color: black;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 
 }
 
