@@ -167,7 +167,7 @@ header nav {
     margin: 1rem 1.5rem;
     padding-top: 0.5rem;
     display: inline-block;
-    color: #f6c9ff;
+    height: 100px;
     width: 100%;
 
 
@@ -262,7 +262,7 @@ header nav a {
 /*Illustraiton*/
 
 #splash {
-    background-image: url(billeder/splash.svg);
+    background-image: url(billeder/forside_splash.png);
     background-size: cover;
     width: 100%;
     height: 100vh;
